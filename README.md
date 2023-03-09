@@ -1,5 +1,3 @@
-# blockchain-demo
-
 ## Build Setup
 
 ```bash
