@@ -11,9 +11,9 @@ export default class TreeStore {
     items.forEach((item) => {
       const itemMapParentValue = this.itemMapParents.get(item.parent) || []
       this.itemMapParents.set(item.parent, [...itemMapParentValue, item])
-    })
 
-    items.forEach((item) => this.itemMapChildren.set(item.id, item))
+      this.itemMapChildren.set(item.id, item)
+    })
   }
 
   getAll(): IItem[] {
